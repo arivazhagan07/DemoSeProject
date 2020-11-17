@@ -43,7 +43,14 @@ public class TestClass1 {
 	@Test
 	public void Test3( ) {
 	driver.navigate().to("https://www.google.com/?safe=active&ssui=on");
-	System.out.println("Test3 Title is : "+driver.getTitle());
+	
+	try {
+		if(driver.getTitle().equals("Goog"))
+		   System.out.println("Test3 Title is : "+driver.getTitle());
+	}catch (Exception e) {
+		e.printStackTrace();
+	}
+	
 
 	}
 
