@@ -1,6 +1,8 @@
 package com.automationA.DemoSeProject;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;import org.testng.annotations.BeforeMethod;
@@ -45,8 +47,9 @@ public class TestClass1 {
 	driver.navigate().to("https://www.google.com/?safe=active&ssui=on");
 	
 	try {
-		if(driver.getTitle().equals("Goog"))
+		
 		   System.out.println("Test3 Title is : "+driver.getTitle());
+		   driver.findElement(By.id("Tesrtuy"));
 	}catch (Exception e) {
 		e.printStackTrace();
 	}
