@@ -40,6 +40,13 @@ public class TestClass1 {
 	System.out.println("Test2 Title is : "+driver.getTitle());
 
 	}
+	
+	@Test
+	public void Test2_1( ) {
+	driver.navigate().to("https://www.google.com/?safe=active&ssui=on");
+	System.out.println("Test2_1 Title is : "+driver.getTitle());
+
+	}
 
 
 	@Test
