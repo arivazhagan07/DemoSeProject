@@ -50,6 +50,7 @@ public class TestClass1 {
         dr.setPlatform(Platform.WINDOWS);
     }
 	
+    System.setProperty("webdriver.chrome.driver", "C:\\Browser Drivers\\chromedriver.exe");
     driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().window().fullscreen();
