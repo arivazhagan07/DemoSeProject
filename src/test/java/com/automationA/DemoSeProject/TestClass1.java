@@ -22,7 +22,7 @@ public class TestClass1 {
 	
 	String browserType= "chrome";
 	
-	WebDriver driver = null;
+	public static WebDriver driver;
 
 	@BeforeMethod
 	public void launchBrowser( ) throws MalformedURLException {
@@ -39,6 +39,7 @@ public class TestClass1 {
 	
 	
 	DesiredCapabilities dr=null;
+	
     if(browserType.equals("chrome")){
     dr=DesiredCapabilities.chrome();
     dr.setBrowserName("chrome");
@@ -51,7 +52,9 @@ public class TestClass1 {
     }
 	
     System.setProperty("webdriver.chrome.driver", "C:\\Browser Drivers\\chromedriver.exe");
-    driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
+    //driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
+    
+    driver=new RemoteWebDriver(new    URL("http://192.168.134.2:4444/wd/hub"), dr);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().window().fullscreen();
 
