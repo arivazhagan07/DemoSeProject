@@ -2,56 +2,56 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78306" started-at="2020-11-22T20:18:16 IST" finished-at="2020-11-22T20:19:34 IST">
+  <suite name="Default suite" duration-ms="139509" started-at="2020-11-23T17:03:29 IST" finished-at="2020-11-23T17:05:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78306" started-at="2020-11-22T20:18:16 IST" finished-at="2020-11-22T20:19:34 IST">
+    <test name="Default test" duration-ms="139509" started-at="2020-11-23T17:03:29 IST" finished-at="2020-11-23T17:05:49 IST">
       <class name="com.automationA.DemoSeProject.TestClass1">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="29637" started-at="2020-11-22T20:18:16 IST" finished-at="2020-11-22T20:18:45 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="51155" started-at="2020-11-23T17:03:29 IST" finished-at="2020-11-23T17:04:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="firstTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="firstTest" duration-ms="3353" started-at="2020-11-22T20:18:45 IST" finished-at="2020-11-22T20:18:49 IST">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="firstTest" duration-ms="6412" started-at="2020-11-23T17:04:20 IST" finished-at="2020-11-23T17:04:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="467" started-at="2020-11-22T20:18:49 IST" finished-at="2020-11-22T20:18:49 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="997" started-at="2020-11-23T17:04:27 IST" finished-at="2020-11-23T17:04:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="7750" started-at="2020-11-22T20:18:49 IST" finished-at="2020-11-22T20:18:57 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="41051" started-at="2020-11-23T17:04:28 IST" finished-at="2020-11-23T17:05:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="forthTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="forthTest" duration-ms="13222" started-at="2020-11-22T20:18:57 IST" finished-at="2020-11-22T20:19:10 IST">
+        <test-method status="PASS" signature="forthTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="forthTest" duration-ms="11889" started-at="2020-11-23T17:05:09 IST" finished-at="2020-11-23T17:05:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forthTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="235" started-at="2020-11-22T20:19:10 IST" finished-at="2020-11-22T20:19:10 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="1078" started-at="2020-11-23T17:05:21 IST" finished-at="2020-11-23T17:05:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="7572" started-at="2020-11-22T20:19:10 IST" finished-at="2020-11-22T20:19:18 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="11858" started-at="2020-11-23T17:05:22 IST" finished-at="2020-11-23T17:05:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="secondTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="secondTest" duration-ms="2793" started-at="2020-11-22T20:19:18 IST" finished-at="2020-11-22T20:19:21 IST">
+        <test-method status="PASS" signature="secondTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="secondTest" duration-ms="1911" started-at="2020-11-23T17:05:34 IST" finished-at="2020-11-23T17:05:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="313" started-at="2020-11-22T20:19:21 IST" finished-at="2020-11-22T20:19:21 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="840" started-at="2020-11-23T17:05:36 IST" finished-at="2020-11-23T17:05:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="7765" started-at="2020-11-22T20:19:21 IST" finished-at="2020-11-22T20:19:29 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="launchBrowser" is-config="true" duration-ms="9677" started-at="2020-11-23T17:05:36 IST" finished-at="2020-11-23T17:05:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="thirdTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="thirdTest" duration-ms="3259" started-at="2020-11-22T20:19:29 IST" finished-at="2020-11-22T20:19:32 IST">
+        <test-method status="PASS" signature="thirdTest()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="thirdTest" duration-ms="1649" started-at="2020-11-23T17:05:46 IST" finished-at="2020-11-23T17:05:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thirdTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="1826" started-at="2020-11-22T20:19:32 IST" finished-at="2020-11-22T20:19:34 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automationA.DemoSeProject.TestClass1@bd8db5a]" name="afterMethod" is-config="true" duration-ms="863" started-at="2020-11-23T17:05:48 IST" finished-at="2020-11-23T17:05:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

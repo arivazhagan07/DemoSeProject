@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;import org.testng.annotations.BeforeMethod;
@@ -22,10 +23,29 @@ public class TestClass1 {
 	
 	String browserType= "chrome";
 	
-	public static WebDriver driver;
+	WebDriver driver =null;
+	
+	public static final String USERNAME = "arivazhaganrajen1";
+	public static final String AUTOMATE_KEY = "9j7e7bjZZdaxpDK3qa2R";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
 	@BeforeMethod
 	public void launchBrowser( ) throws MalformedURLException {
+		
+		DesiredCapabilities caps = new DesiredCapabilities();
+        
+		caps.setCapability("os", "Windows");
+		caps.setCapability("os_version", "7");
+		caps.setCapability("browser", "Firefox");
+		caps.setCapability("browser_version", "60");
+		caps.setCapability("name", "arivazhaganrajen1's First Test");
+		caps.setCapability("project", "DeomSeProject");
+		caps.setCapability("build", "build1");
+		
+		
+		driver = new RemoteWebDriver(new URL(URL), caps);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().fullscreen();
 
 	/*DesiredCapabilities dr = null;
 	dr=DesiredCapabilities.chrome();
@@ -35,15 +55,21 @@ public class TestClass1 {
 	//WebDriverManager.chromedriver().setup();
 	//driver = new ChromeDriver();
 	System.setProperty("webdriver.chrome.driver", "C:\\Browser Drivers\\chromedriver.exe");
-	driver = new RemoteWebDriver(new URL("http://192.168.134.2:4444/wd/hub"), dr);*/
+	driver = new RemoteWebDriver(new URL("http://192.168.134.2:4444/wd/hub"), dr);
 	
 	
-	DesiredCapabilities dr=null;
+	//ChromeOptions dr=null;
+	DesiredCapabilities dr =null;
+	
 	
     if(browserType.equals("chrome")){
     dr=DesiredCapabilities.chrome();
-    dr.setBrowserName("chrome");
+    dr.setCapability("browserName", "chrome");
     dr.setPlatform(Platform.WINDOWS);
+    
+    dr=new ChromeOptions();
+    dr.setCapability("browserName", "chrome");
+    dr.setCapability("Platform", "WINDOWS");
  
     }else{
         dr=DesiredCapabilities.internetExplorer();
@@ -51,13 +77,14 @@ public class TestClass1 {
         dr.setPlatform(Platform.WINDOWS);
     }
 	
-    System.setProperty("webdriver.chrome.driver", "C:\\Browser Drivers\\chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver", "C:\\Browser Drivers\\chromedriver.exe");
     //driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
     
-    driver=new RemoteWebDriver(new    URL("http://192.168.134.2:4444/wd/hub"), dr);
+    WebDriverManager.chromedriver().setup();
+    driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().window().fullscreen();
-
+*/
 	}
 
 	@Test
