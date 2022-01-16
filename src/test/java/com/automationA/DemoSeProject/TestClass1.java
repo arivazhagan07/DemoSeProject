@@ -70,6 +70,7 @@ public class TestClass1 {
     dr=new ChromeOptions();
     dr.setCapability("browserName", "chrome");
     dr.setCapability("Platform", "WINDOWS");
+    ////
  
     }else{
         dr=DesiredCapabilities.internetExplorer();
